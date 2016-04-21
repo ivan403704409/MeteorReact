@@ -1,12 +1,12 @@
 import React from 'react';
 import {mount} from 'react-mounter';
-import {HomeLayout} from './layouts/HomeLayout.jsx';
-import {AppLayout} from './layouts/AppLayout.jsx';
+import {HomeLayout} from '../layouts/HomeLayout.jsx';
+import {AppLayout} from '../layouts/AppLayout.jsx';
 
-import Home from './pages/Home.jsx';
-import Dashboard from './pages/Dashboard.jsx';
-import Blog from './pages/Blog.jsx';
-import About from './pages/About.jsx';
+import Home from '../pages/front/Home.jsx';
+import Dashboard from '../pages/back/Dashboard.jsx';
+import Blog from '../pages/front/Blog.jsx';
+import About from '../pages/front/About.jsx';
 // Home Page
 FlowRouter.route('/', {
     name: 'home',

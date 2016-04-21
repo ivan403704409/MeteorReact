@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from '../partials/Header.jsx';
+import Header from '../partials/Nav/Header.jsx';
 export const HomeLayout = ({content}) => (
     <div>
         <Header />

@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import Header from '../partials/Header.jsx';
+import Header from '../../partials/Nav/Header.jsx';
 
 export default class About extends Component {
     render() {

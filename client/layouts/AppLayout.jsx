@@ -1,6 +1,6 @@
 import React from 'react';
-import Header from '../partials/Header.jsx';
-import AppNav from '../partials/AppNav.jsx';
+import Header from '../partials/Nav/Header.jsx';
+import AppNav from '../partials/Nav/AppNav.jsx';
 
 export const AppLayout = ({content}) => (
     <div>
