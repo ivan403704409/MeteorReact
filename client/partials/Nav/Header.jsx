@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import MainNav from './MainNav.jsx';
 
 export default class Header extends Component {
+    
     render() {
         return (
             <header className="header">

@@ -7,7 +7,7 @@ Meteor.methods({
     }
  
     Items.insert({
-      text,
+      text:text,
       createdAt: new Date(),
       owner: Meteor.userId(),
       username: Meteor.user().username,

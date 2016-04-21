@@ -7,15 +7,12 @@ export default class PostHeader extends Component {
  
   
   render() {
-    if (!this.props.posts) {
-      return <div>loading... </div>
-    }
+    
     return (
       <div className="container">
-         {this.props.posts.map((post) => (
-        <HeaderItem key={post._id} item={post} />
-      ))}
-      
+      <ul>{this.props.posts.map((post) => (
+        <HeaderItem key={post._id} post={post} />
+      ))}</ul>
           
       </div>
     );

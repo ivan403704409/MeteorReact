@@ -7,13 +7,13 @@ import PostHeader from './PostHeader.jsx';
 export default class PostLists extends Component {
  
   getMeteorData() {
-    console.log('hello');
     Meteor.subscribe('posts');
     const posts = Posts.find().fetch();
-    return {posts};
+    return {posts:posts};
   }
   render() {
-    if (!this.data.posts) {
+    if (!this.data.posts||this.data.posts.length<=0) {
+      console.log(this.data.posts);
       return <div>loading... </div>
     }
     console.log(this.data.posts);

@@ -1,13 +1,12 @@
 Meteor.methods({
-  'posts.insert'(text) {
+  'posts.insert'(title) {
     console.log('hello  posts insert');
     check(text, String);
     if (! Meteor.userId()) {
       throw new Meteor.Error('not-authorized');
     }
- 
     Posts.insert({
-      title,
+      title:title,
       createdAt: new Date(),
       owner: Meteor.userId(),
       username: Meteor.user().username,
