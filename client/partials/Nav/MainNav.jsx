@@ -20,6 +20,9 @@ export default class MainNav extends Component {
                  <li>
                         <a href="/about" >关于</a>
                 </li>
+                 <li>
+                        <a href="/dashboard" >DashBoard</a>
+                </li>
                 <li>
                          <i className="fa fa-user" aria-hidden="true"></i><Account />
                 </li>

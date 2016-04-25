@@ -19,7 +19,7 @@ export default class Comment extends Component {
    	render() {
     return (
         <div>
-
+        
             <form className="new-item" onSubmit={this.handleSubmit.bind(this)}>
               <input 
                 type="text"

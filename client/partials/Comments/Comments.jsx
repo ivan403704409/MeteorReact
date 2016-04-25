@@ -20,6 +20,8 @@ export default class Comments extends Component {
     console.log(this.data.items);
     return (
       <div className="container">
+      <h4>大家一起来评论一下,这张图</h4>
+        <img src="/ssb.png" height="130"/>
        <CommentList items={this.data.items}/> 
       {Meteor.userId()?<CommentBox/> :<a>登录后才能添加评论</a>}
           

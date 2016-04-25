@@ -7,10 +7,10 @@ export default class HeaderItem extends Component {
     return <li>
       	<span className="text">
           <h2><strong>{this.props.post.title}</strong></h2>
-          <h4>作者:</h4>
-          <h6>{this.props.post.username}</h6>
-          <h4>写于:</h4>
-          <h6>{this.props.post.createdAt.toString()}</h6>
+          <a>作者:</a>{this.props.post.username}
+          <br />
+          <br />
+          <a>写于:</a>{this.props.post.createdAt.toString()}
         </span>
        </li>;
   }
